@@ -1,0 +1,57 @@
+﻿Build started 2012/11/26 上午 11:35:23.
+     1>Project "C:\Programing\QtFile\QtFile\QtFile.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Release\QtFile.unsuccessfulbuild".
+       CustomBuild:
+         Moc'ing qtfile.h...
+       ClCompile:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\4.8.2x32\include /I.\GeneratedFiles\Release /IC:\Qt\4.8.2x32\include\QtCore /IC:\Qt\4.8.2x32\include\QtGui /I"C:\Programing\Adept sdk files\dpcutil.lib" /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ConAPI.cpp GeneratedFiles\Release\moc_qtfile.cpp MyThread.cpp byteData.cpp line.cpp main.cpp qtfile.cpp
+         ConAPI.cpp
+         moc_qtfile.cpp
+         MyThread.cpp
+         byteData.cpp
+         line.cpp
+         main.cpp
+         qtfile.cpp
+         Generating Code...
+     1>c:\programing\qtfile\qtfile\qtfile.cpp(90): warning C4715: 'QtFile::optUserType' : not all control paths return a value
+     1>c:\programing\qtfile\qtfile\bytedata.cpp(115): warning C4715: 'byteData::decimalConvert' : not all control paths return a value
+     1>c:\programing\qtfile\qtfile\conapi.cpp(177): warning C4715: 'ConAPI::optUserType' : not all control paths return a value
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\4.8.2x32\include /I.\GeneratedFiles\Release /IC:\Qt\4.8.2x32\include\QtCore /IC:\Qt\4.8.2x32\include\QtGui /I"C:\Programing\Adept sdk files\dpcutil.lib" /nologo /W1 /WX- /O2 /Oy- /D UNICODE /D WIN32 /D QT_LARGEFILE_SUPPORT /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t- /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\qrc_qtfile.cpp
+         qrc_qtfile.cpp
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Programing\QtFile\Win32\Release\\QtFile.exe" /NOLOGO /LIBPATH:C:\Qt\4.8.2x32\lib qtmain.lib QtCore4.lib QtGui4.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\QtFile.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /PDB:"C:\Programing\QtFile\Win32\Release\QtFile.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Programing\QtFile\Win32\Release\QtFile.lib" /MACHINE:X86 Release\qcustomplot.obj
+         Release\byteData.obj
+         Release\ConAPI.obj
+         Release\qrc_qtfile.obj
+         Release\moc_MyThread.obj
+         Release\moc_qcustomplot.obj
+         Release\moc_qtfile.obj
+         Release\line.obj
+         Release\main.obj
+         Release\MyThread.obj
+         Release\qtfile.obj
+     1>ConAPI.obj : error LNK2019: unresolved external symbol __imp__DpcTerm referenced in function "private: void __thiscall ConAPI::EXIT(void)" (?EXIT@ConAPI@@AAEXXZ)
+     1>qtfile.obj : error LNK2001: unresolved external symbol __imp__DpcTerm
+     1>ConAPI.obj : error LNK2019: unresolved external symbol __imp__DpcCloseData referenced in function "private: void __thiscall ConAPI::EXIT(void)" (?EXIT@ConAPI@@AAEXXZ)
+     1>qtfile.obj : error LNK2001: unresolved external symbol __imp__DpcCloseData
+     1>ConAPI.obj : error LNK2019: unresolved external symbol __imp__DvmgGetDevName referenced in function "private: unsigned int __thiscall ConAPI::FInit(void)" (?FInit@ConAPI@@AAEIXZ)
+     1>qtfile.obj : error LNK2001: unresolved external symbol __imp__DvmgGetDevName
+     1>ConAPI.obj : error LNK2019: unresolved external symbol __imp__DvmgGetDefaultDev referenced in function "private: unsigned int __thiscall ConAPI::FInit(void)" (?FInit@ConAPI@@AAEIXZ)
+     1>qtfile.obj : error LNK2001: unresolved external symbol __imp__DvmgGetDefaultDev
+     1>ConAPI.obj : error LNK2019: unresolved external symbol __imp__DpcInit referenced in function "private: unsigned int __thiscall ConAPI::FInit(void)" (?FInit@ConAPI@@AAEIXZ)
+     1>qtfile.obj : error LNK2001: unresolved external symbol __imp__DpcInit
+     1>ConAPI.obj : error LNK2019: unresolved external symbol __imp__DpcGetReg referenced in function "public: bool __thiscall ConAPI::check(void)" (?check@ConAPI@@QAE_NXZ)
+     1>qtfile.obj : error LNK2001: unresolved external symbol __imp__DpcGetReg
+     1>ConAPI.obj : error LNK2019: unresolved external symbol __imp__DpcPutReg referenced in function "public: void __thiscall ConAPI::finishReading(void)" (?finishReading@ConAPI@@QAEXXZ)
+     1>qtfile.obj : error LNK2001: unresolved external symbol __imp__DpcPutReg
+     1>ConAPI.obj : error LNK2019: unresolved external symbol __imp__DpcWaitForTransaction referenced in function "public: void __thiscall ConAPI::finishReading(void)" (?finishReading@ConAPI@@QAEXXZ)
+     1>qtfile.obj : error LNK2001: unresolved external symbol __imp__DpcWaitForTransaction
+     1>ConAPI.obj : error LNK2019: unresolved external symbol __imp__DpcOpenData referenced in function "public: __thiscall ConAPI::ConAPI(void)" (??0ConAPI@@QAE@XZ)
+     1>qtfile.obj : error LNK2001: unresolved external symbol __imp__DpcOpenData
+     1>C:\Programing\QtFile\Win32\Release\\QtFile.exe : fatal error LNK1120: 9 unresolved externals
+     1>Done Building Project "C:\Programing\QtFile\QtFile\QtFile.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:27.57
